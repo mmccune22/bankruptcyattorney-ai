@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Matt McCune</title>
+<meta name="description" content="Matt McCune is a consumer bankruptcy attorney with 25 years in practice and the founder and CEO of BK FastPass.">
+<link rel="canonical" href="https://bankruptcyattorney.ai/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Matt McCune">
+<meta property="og:description" content="Matt McCune is a consumer bankruptcy attorney with 25 years in practice and the founder and CEO of BK FastPass.">
+<meta property="og:url" content="https://bankruptcyattorney.ai/">
+<meta property="og:image" content="https://bankruptcyattorney.ai/matt-cafe.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="matt-avatar.jpg" type="image/jpeg">
+<link rel="apple-touch-icon" href="matt-avatar.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* Founder Minimal. Scheme: "Fresh start" (white, deep green-black, mint marks). Light and dark. */
+:root{
+  --bg:#FFFFFF;
+  --text:#0F2419;
+  --soft:#33463C;
+  --muted:#6D7B73;
+  --line:#E4EBE6;
+  --chip:#F0F5F1;
+  --mark:#C4EDD1;
+  --mark-text:#0F2419;
+  --accent:#1F6B47;
+  --photo-a:#E6ECE8; --photo-b:#CBD6CF;
+  --sans:"Geist", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  --mono:"Geist Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0E1411;--text:#E6EEE9;--soft:#C2CEC7;--muted:#86958C;--line:#223029;--chip:#16201B;
+    --mark:rgba(96,200,140,.26);--mark-text:#D6F5E2;--accent:#6CC196;--photo-a:#1E2A24;--photo-b:#141C18;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0E1411;--text:#E6EEE9;--soft:#C2CEC7;--muted:#86958C;--line:#223029;--chip:#16201B;
+  --mark:rgba(96,200,140,.26);--mark-text:#D6F5E2;--accent:#6CC196;--photo-a:#1E2A24;--photo-b:#141C18;
+  color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:84px}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:18px;line-height:1.65;margin:0;-webkit-font-smoothing:antialiased;padding-inline:20px}
+.col{max-width:640px;margin:0 auto}
+a{color:inherit;text-decoration-thickness:1px;text-underline-offset:3px;text-decoration-color:var(--accent)}
+a:hover{text-decoration-color:var(--text)}
+p{margin:0 0 1.1em}
+h1,h2,h3{margin:0;font-weight:600;letter-spacing:-.02em;text-wrap:balance}
+mark{background:linear-gradient(transparent 12%,var(--mark) 12%,var(--mark) 88%,transparent 88%);color:var(--mark-text);padding:0 .15em;margin:0 -.05em;border-radius:2px}
+.mono{font-family:var(--mono);font-size:13px;color:var(--muted);letter-spacing:0}
+
+.site-head{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;margin-inline:-20px;padding:14px 20px;background:color-mix(in srgb,var(--chip) 94%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.site-head .inner{max-width:900px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:16px}
+.me{display:flex;align-items:center;gap:12px;text-decoration:none;min-width:0}
+.av{width:42px;height:42px;border-radius:50%;object-fit:cover;background:var(--chip);flex:none}
+.me-text{display:flex;flex-direction:column;line-height:1.25;min-width:0}
+.me-name{font-weight:600;font-size:17px;letter-spacing:-.01em}
+.me-role{font-size:13px;color:var(--muted);white-space:nowrap;line-height:1.35}
+.site-head nav{display:flex;align-items:center;gap:18px;font-size:15px}
+.site-head nav a{text-decoration:none;color:var(--soft);font-weight:500;padding-block:4px;border-bottom:2px solid transparent}
+.site-head nav a:hover{color:var(--text)}
+.site-head nav a[aria-current="page"]{color:var(--text);border-bottom-color:var(--accent)}
+.site-head nav a.cta{background:var(--accent);color:var(--bg);padding:7px 14px;border-radius:999px;border:0}
+.site-head nav a.cta:hover{opacity:.9;color:var(--bg)}
+
+.hero{padding-block:clamp(56px,10vw,104px) 32px}
+.hero h1{font-size:clamp(40px,7vw,60px);line-height:1.05;margin-bottom:28px}
+.hero p{font-size:clamp(19px,2.2vw,21px);color:var(--soft)}
+.proof{list-style:none;margin:28px 0 0;padding:16px 0 0;border-top:1px solid var(--line);font-family:var(--mono);font-size:13px;color:var(--muted);line-height:1.8}
+.proof li{display:inline}
+.proof li+li::before{content:"·";margin:0 8px}
+.photo{display:block;width:100%;aspect-ratio:3/2;max-width:100%;height:auto;object-fit:cover;object-position:60% 35%;border-radius:6px;background:var(--chip);margin:8px 0 0}
+.photo span{position:absolute;left:16px;bottom:14px;right:16px}
+.cap{margin-bottom:0}
+
+section{padding-block:44px;border-top:1px solid var(--line)}
+section h2{font-size:clamp(26px,3.6vw,32px);font-weight:600;color:var(--text);letter-spacing:-.02em;line-height:1.15;margin-bottom:24px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.rows{list-style:none;margin:0;padding:0}
+.rows li{display:grid;grid-template-columns:110px 1fr;gap:16px;padding:12px 0;align-items:baseline}
+.rows li+li{border-top:1px dashed var(--line)}
+.rows a{text-decoration:none;font-weight:500}
+.rows a:hover{text-decoration:underline}
+.rows .d{color:var(--soft);font-size:16px;display:block;font-weight:400}
+.tag{font-family:var(--mono);font-size:11px;color:var(--muted);border:1px dashed var(--muted);border-radius:3px;padding:0 5px;margin-left:6px;white-space:nowrap}
+.card{background:var(--chip);border-radius:8px;padding:20px 22px;display:flex;gap:16px;justify-content:space-between;align-items:center;flex-wrap:wrap;margin-top:24px}
+.card p{margin:0;font-weight:500}
+.btn{display:inline-block;background:var(--text);color:var(--bg);text-decoration:none;font-weight:500;font-size:15px;padding:10px 16px;border-radius:6px;border:0;cursor:pointer;font-family:inherit}
+.btn:hover{opacity:.85}
+.facts{list-style:none;margin:0;padding:0}
+.facts li{padding:10px 0 10px 22px;position:relative;color:var(--soft)}
+.facts li::before{content:"–";position:absolute;left:0;color:var(--muted)}
+.more{display:inline-block;margin-top:14px;font-weight:500}
+.feed{list-style:none;margin:0;padding:0}
+.feed li{display:grid;grid-template-columns:36px 1fr auto;gap:14px;align-items:start;padding:14px 0}
+.feed li+li{border-top:1px dashed var(--line)}
+.feed .ic{width:36px;height:36px;border-radius:50%;background:var(--chip);color:var(--accent);display:grid;place-items:center}
+.feed .ic svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+.feed .t{font-weight:500;line-height:1.4;display:block}
+.feed a.t{text-decoration:none}
+.feed a.t:hover{text-decoration:underline}
+.feed .m{display:block;font-family:var(--sans);font-size:15px;color:var(--muted);margin-top:4px;line-height:1.45}
+.feed .dt{font-family:var(--sans);font-size:15px;font-weight:500;color:var(--soft);white-space:nowrap;padding-top:1px;font-variant-numeric:tabular-nums}
+.feed-more{margin-top:14px;font-family:var(--sans);font-size:15px;font-weight:500;background:transparent;border:1px solid var(--line);color:var(--text);padding:8px 14px;border-radius:999px;cursor:pointer}
+.feed-more:hover{border-color:var(--muted)}
+@media (max-width:560px){.feed li{grid-template-columns:36px 1fr}.feed .dt{grid-column:2;padding-top:0;margin-top:-8px}}
+.contact{padding-block:72px 88px}
+.contact .contact-h{display:block;font-size:clamp(34px,5.4vw,48px);font-weight:600;color:var(--text);letter-spacing:-.025em;line-height:1.1;margin:0 0 18px}
+.contact p{color:var(--soft);font-size:clamp(19px,2.2vw,21px);max-width:34em}
+.contact-email{margin:30px 0 0}
+.contact-email a{font-size:clamp(20px,2.6vw,24px);font-weight:500;color:var(--text);text-decoration:underline;text-decoration-color:var(--accent);text-decoration-thickness:2px;text-underline-offset:6px;word-break:break-word}
+.contact-email a:hover{color:var(--accent)}
+.addr{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:8px}
+.addr code{font-family:var(--mono);font-size:17px;background:var(--chip);padding:8px 12px;border-radius:6px;user-select:all}
+.copy,.ghost{font-family:var(--sans);font-size:14px;background:transparent;border:1px solid var(--line);color:var(--text);padding:8px 12px;border-radius:6px;cursor:pointer;text-decoration:none;display:inline-block;line-height:1.4}
+.copy:hover,.ghost:hover{border-color:var(--muted)}
+.site-foot{margin-inline:-20px;padding:32px 20px calc(24px + env(safe-area-inset-bottom,0px));background:var(--chip);border-top:1px solid var(--line)}
+.site-foot .inner{max-width:900px;margin:0 auto}
+.foot-top{display:flex;justify-content:space-between;align-items:flex-start;gap:28px 48px;flex-wrap:wrap}
+.foot-id{display:flex;flex-direction:column;gap:2px;line-height:1.35}
+.foot-id .sub{font-size:14px;color:var(--muted)}
+.foot-links{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,auto);gap:8px 40px;font-size:15px;line-height:1.5}
+.foot-links a{text-decoration:none;color:var(--soft)}
+.foot-links a:hover{color:var(--text);text-decoration:underline;text-decoration-color:var(--accent)}
+.foot-base{font-size:14px;color:var(--muted);margin-top:24px;padding-top:14px;border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+@media (max-width:560px){.foot-links{grid-template-columns:1fr}}
+
+/* Inner page (Story) */
+.page{padding-block:clamp(48px,8vw,88px) 24px}
+.back{font-size:15px;color:var(--muted);text-decoration:none}
+.back:hover{color:var(--text)}
+.page h1{font-size:clamp(36px,6vw,52px);line-height:1.08;margin:22px 0 28px}
+.page h2{font-size:21px;font-weight:600;color:var(--text);margin:40px 0 12px;display:block}
+.page p{color:var(--soft)}
+.page .lead{font-size:clamp(19px,2.2vw,21px);color:var(--text)}
+.todo{display:block;font-family:var(--mono);font-size:12.5px;color:var(--muted);border-left:2px dashed var(--muted);padding:4px 0 4px 12px;margin:-4px 0 1.1em}
+.bio{border:1px solid var(--line);border-radius:8px;padding:18px 20px;margin-bottom:14px}
+.bio header{padding:0 0 10px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.bio p{margin:0;color:var(--soft);font-size:16.5px}
+.shots{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.shot{aspect-ratio:4/5;border-radius:6px;background:linear-gradient(160deg,var(--photo-a),var(--photo-b));display:flex;align-items:flex-end;padding:10px}
+[hidden]{display:none!important}
+
+
+:focus-visible{outline:2px solid var(--text);outline-offset:3px}
+@media (max-width:560px){
+  .site-head{padding-block:10px}
+  .site-head .inner{gap:10px}
+  .av{width:38px;height:38px}
+  .me-name{font-size:16px}
+  .me-role{font-size:12px;white-space:normal}
+  .site-head nav a.cta{padding:6px 12px;font-size:14px;white-space:nowrap}
+  .rows li{grid-template-columns:1fr;gap:2px}
+}
+
+
+.hero .next{font-size:clamp(24px,3.2vw,30px);font-weight:600;letter-spacing:-.02em;color:var(--text);margin:6px 0 20px;line-height:1.2}
+.stats{list-style:none;margin:12px 0 48px;padding:16px 20px;display:grid;grid-template-columns:repeat(3,1fr);background:var(--chip);border-radius:8px}
+.stats li{padding:0 16px 0 0}
+.stats li+li{padding-left:16px;border-left:1px solid var(--line)}
+.stats b{display:block;font-size:22px;font-weight:600;letter-spacing:-.02em;line-height:1.2}
+.stats span{display:block;font-family:var(--sans);font-size:15px;color:var(--muted);margin-top:4px;line-height:1.4}
+.intro{color:var(--soft);margin-bottom:6px}
+/* Prose size shared by hero, story and contact */
+.story-home p{color:var(--soft);font-size:clamp(19px,2.2vw,21px)}
+.story-more{margin-top:8px}
+.story-more h3{font-size:clamp(21px,2.6vw,24px);font-weight:600;color:var(--text);margin:32px 0 10px;letter-spacing:-.015em;line-height:1.25}
+.more-btn{margin-top:14px;font-family:var(--sans);font-size:15px;font-weight:500;background:transparent;border:1px solid var(--line);color:var(--text);padding:8px 14px;border-radius:999px;cursor:pointer}
+.more-btn:hover{border-color:var(--muted)}
+.aside-line{font-family:var(--mono);font-size:13px;color:var(--muted);border-top:1px dashed var(--line);padding-top:14px;margin-top:22px}
+.reasons{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:18px 0 22px}
+.reasons li{background:var(--chip);border-radius:999px;padding:5px 12px;font-size:14.5px;color:var(--soft)}
+@media (max-width:560px){
+  .stats{grid-template-columns:1fr}
+  .stats li,.stats li+li{padding:0;border-left:0}
+  .stats li+li{border-top:1px dashed var(--line);margin-top:12px;padding-top:12px}
+}
+
+</style>
+</head>
+<body>
+<header class="site-head">
+  <div class="inner">
+    <a class="me" href="#top" aria-label="Matt McCune, home">
+      <img class="av" src="matt-avatar.jpg" alt="" width="42" height="42">
+      <span class="me-text"><span class="me-name">Matt McCune</span><span class="me-role">Veteran consumer bankruptcy attorney</span><span class="me-role">Building the future of bankruptcy</span></span>
+    </a>
+    <nav aria-label="Primary">
+      <a class="cta" href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="col">
+
+  <!-- ================= HOME ================= -->
+  <main id="view-home">
+
+    <!-- HERO: expertise → experience → future → builder. Personal story comes later. -->
+    <div class="hero" id="top">
+      <h1>Hi, I’m Matt.</h1>
+      <p>I’ve spent 25 years as a consumer bankruptcy attorney—representing thousands of people, teaching other lawyers, and seeing firsthand where the process works and where it gets in people’s way.</p>
+      <p class="next">Now I’m working on what comes next.</p>
+      <p>I’m the founder and CEO of <a href="https://www.bkfastpass.com/" target="_blank" rel="noopener">BK FastPass</a>, where we’re building tools to make bankruptcy easier to understand, access, and practice. I still represent clients, so this work starts with the problems I see every day.</p>
+      <p>I speak and write about consumer bankruptcy, the people navigating it, and how technology could make the process work better.</p>
+    </div>
+
+    <figure style="margin:0">
+      <img class="photo" src="matt-cafe.jpg" alt="Matt McCune sitting at a café table by a window, hands folded, smiling slightly" width="1600" height="893">
+    </figure>
+    <ul class="stats" aria-label="At a glance">
+      <li><b>25 years</b><span>in consumer bankruptcy</span></li>
+      <li><b>5,000</b><span>debtors represented</span></li>
+      <li><b>Founder &amp; CEO</b><span>BK FastPass</span></li>
+    </ul>
+
+    <!-- SPEAKING AND MEDIA: entries live in MEDIA (page script), newest first. -->
+    <section id="media">
+      <h2><span>Speaking and Media</span></h2>
+      <ol class="feed" id="feed"></ol>
+      <button class="feed-more" id="feed-more" type="button" hidden></button>
+    </section>
+
+    <!-- STORY: "Why I do this" — Matt's own text (Sept 30), lightly edited. Shown in full. -->
+    <section class="story-home" id="how">
+      <h2><span>Why I do this</span></h2>
+      <p>I know what it feels like to be trapped by debt. In 2002, just out of law school, I filed my own bankruptcy. Bad decisions, bad luck, and bad timing had left me feeling despondent about my future. Bankruptcy gave me a way forward. That fresh start changed my life, and I decided to build my career around helping other people find theirs.</p>
+      <p>I committed early to consumer bankruptcy, focusing on Chapter 7 and Chapter 13. When the law changed dramatically in 2005, I dug into it and started teaching other attorneys. I liked the work because it solved real problems for people. Sometimes that meant filing a case. Sometimes it meant telling someone bankruptcy wasn’t the right answer. It always meant taking their situation seriously and giving them straight advice.</p>
+      <p>Over the years, I also saw what happened when people didn’t get that care. People who were already struggling would spend their last available dollars on a lawyer, trusting that they were buying a way forward, and receive inadequate representation. I began bringing cases against bankruptcy attorneys whose conduct harmed their clients. As other lawyers referred those cases to me, that work became a significant part of my practice.</p>
+      <p>Those experiences shaped a belief that drives me today: doing good work for clients should also be good for business. Attorneys who care about their craft should have the tools to serve more people well. People who need help should have an easier time finding and affording that representation.</p>
+      <p>That’s why I’m building BK FastPass. I see an opportunity to use modern software and AI to reduce the time, cost, and friction involved in consumer bankruptcy—to help good attorneys handle more cases without sacrificing the attention each client deserves, and to make quality legal help more affordable.</p>
+      <p>Bankruptcy gave me the chance to move forward. Helping more people get that same chance is still what this work is about.</p>
+    </section>
+
+    <!-- CONTACT: the email is set once in the script (SITE.email). -->
+    <section class="contact" id="contact">
+      <h2 class="contact-h">Let’s talk.</h2>
+      <p>Podcasts, interviews, media, legal tech, or just an interesting conversation about where consumer bankruptcy is headed.</p>
+      <p class="contact-email"><a data-email-link href="mailto:matt.mccune@bkfastpass.com"><span data-email>matt.mccune@bkfastpass.com</span></a></p>
+    </section>
+  </main>
+
+
+
+</div>
+
+<!-- FOOTER -->
+<footer class="site-foot">
+  <div class="inner">
+    <div class="foot-top">
+      <div class="foot-id">
+        <span class="me-name">Matt McCune</span>
+        <span class="sub">Consumer bankruptcy attorney</span>
+        <span class="sub">CEO, BK FastPass</span>
+      </div>
+      <ul class="foot-links">
+        <li><a data-email-link href="mailto:matt.mccune@bkfastpass.com"><span data-email>matt.mccune@bkfastpass.com</span></a></li>
+        <li><a href="https://bankruptcyattorneyai.substack.com" target="_blank" rel="noopener">Matt McCune on Substack ↗</a></li>
+        <li><a href="https://www.linkedin.com/in/mattmccune/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+        <li><a href="https://www.bkfastpass.com/" target="_blank" rel="noopener">BK FastPass ↗</a></li>
+        <li><a href="https://mccunelegal.com/" target="_blank" rel="noopener">McCune Legal ↗</a></li>
+      </ul>
+    </div>
+    <div class="foot-base"><span>© 2026 Matt McCune</span><span>BankruptcyAttorney.ai</span></div>
+  </div>
+</footer>
+
+<script>
+/* ---- Site settings: change the contact email here and it updates everywhere ---- */
+var SITE = { email: 'matt.mccune@bkfastpass.com' };
+
+/* ---- Speaking and Media: add new entries at the TOP. type = podcast | webinar | talk | venture | cle | article | interview | award | feature ---- */
+var MEDIA = [
+  {type:'webinar',  title:'Me, Myself, and AI', where:'National Association of Consumer Bankruptcy Attorneys', date:'Aug 2026', url:'https://nacba.org/events/EventDetails.aspx?id=2075090'},
+  {type:'webinar',  title:'The AI Advantage, Part 1: Stop Dabbling. Start Deploying', where:'National Association of Consumer Bankruptcy Attorneys', date:'May 2026', url:'https://nacba.org/store/viewproduct.aspx?id=27487665'},
+  {type:'podcast',  title:'From Dabbling to Deployment: How Lawyers Actually Use AI', where:'AI Tools for Practicing Lawyers with Ron Drescher · Ep. 011', date:'Apr 2026', url:'https://lawyeraitoolkit.com/episode-011-from-dabbling-to-deployment-how-lawyers-actually-use-ai'},
+  {type:'interview',title:'Matt McCune on Life, Lessons & Legacy', where:'VoyageDenver', date:'Sep 2025', url:'https://voyagedenver.com/interview/matt-mccune-of-boulder-on-life-lessons-legacy-highlight'},
+  {type:'award',    title:'Top Attorney, Consumer Bankruptcy (2021, 2022, 2023, 2024)', where:'5280 Magazine', date:'2021–2024'},
+  {type:'interview',title:'Meet Matthew McCune', where:'Shoutout Colorado', date:'May 2022', url:'https://shoutoutcolorado.com/meet-matthew-mccune-bankruptcy-attorney/'},
+  {type:'venture',  title:'Co-Founder & General Counsel, LawyerX', where:'Cooperative marketing for solo and small-firm lawyers', date:'2016–2017'},
+  {type:'feature',  title:'Home of the Brave: Valiant Moments in Colorado History', where:'5280 Magazine', date:'Dec 2015', url:'https://5280.com/home-of-the-brave/'},
+  {type:'talk',     title:'Consumer Case Law Update / Ethics', where:'ABI 17th Annual Rocky Mountain Bankruptcy Conference', date:'Jan 2012'},
+  {type:'article',  title:'Lessons From the Edge', where:'The Colorado Lawyer', date:'Jan 2012'},
+  {type:'cle',      title:'Case Law Update; Ethics Panel with Chief Bankruptcy Judge Tallman', where:'Holiday Bankruptcy CLE (Down & Dirty CLE) · Program co-sponsor', date:'Dec 2011'},
+  {type:'award',    title:'Carnegie Medal', where:'Carnegie Hero Fund Commission', date:'Dec 2011', url:'https://www.carnegiehero.org/hero-search/matthew-jason-mccune/'},
+  {type:'cle',      title:'Case Law Update; Divorce and Bankruptcy; Do’s and Don’ts of Representing Debtors', where:'2011 Bankruptcy Nuts and Bolts (Down & Dirty CLE) · Program co-sponsor', date:'Feb 2011'},
+  {type:'talk',     title:'Around the World in 80 Days: Bankruptcy Case Update', where:'ABI 16th Annual Rocky Mountain Bankruptcy Conference', date:'Jan 2011'},
+  {type:'cle',      title:'Bankruptcy Law Hot Topics: Consumer Bankruptcy Update', where:'Colorado Bar Association CLE', date:'Dec 2010'},
+  {type:'award',    title:'2010 Attorneys of the Year', where:'Law Week Colorado', date:'2010'},
+  {type:'award',    title:'2010 Bill Daniels Neighborhood Hero Award', where:'Daniels Fund', date:'2010'},
+  {type:'cle',      title:'Case Law Update', where:'Down & Dirty Bankruptcy Seminar CLE', date:'Mar 2010'},
+  {type:'talk',     title:'Consumer Workshop I: Best Practices', where:'ABI Rocky Mountain Bankruptcy Conference', date:'Jan 2010'},
+  {type:'cle',      title:'Handling United States Trustee Motions to Dismiss & Case Law Update', where:'Down & Dirty Bankruptcy CLE, Advanced Part II', date:'Oct 2009'},
+  {type:'cle',      title:'Case Law Update', where:'Down & Dirty Bankruptcy CLE, Bankruptcy Update', date:'Oct 2008'},
+  {type:'cle',      title:'Claim Bifurcation: Dealing with Secured Creditors to the Benefit of the Debtor', where:'Down & Dirty Bankruptcy CLE, 3rd Annual Seminar', date:'Oct 2007'}
+];
+var FEED_SHOW = 6;
+
+(function(){
+  var P={
+    podcast:'<path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><path d="M12 19v3"/>',
+    webinar:'<path d="m22 8-6 4 6 4V8Z"/><rect x="2" y="6" width="14" height="12" rx="2"/>',
+    venture:'<rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>',
+    talk:'<path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/>',
+    cle:'<path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/>',
+    article:'<path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M8 13h8"/><path d="M8 17h8"/><path d="M8 9h2"/>',
+    feature:'<path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M8 13h8"/><path d="M8 17h8"/><path d="M8 9h2"/>',
+    interview:'<path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2z"/><path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1"/>',
+    award:'<circle cx="12" cy="8" r="6"/><path d="M15.48 12.89 17 22l-5-3-5 3 1.52-9.11"/>'
+  };
+  var L={podcast:'Podcast',webinar:'Webinar',talk:'Conference',venture:'Venture',cle:'CLE',article:'Article',interview:'Interview',award:'Award',feature:'Feature'};
+  /* Meta line leads with Matt's role */
+  var R={podcast:'Podcast guest',webinar:'Webinar speaker',talk:'Conference speaker',venture:'Venture',cle:'CLE speaker',article:'Author',interview:'Interview',award:'Award',feature:'Featured in'};
+  function esc(t){return String(t).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  var list=document.getElementById('feed'), btn=document.getElementById('feed-more');
+  list.innerHTML=MEDIA.map(function(e,i){
+    var t=e.url?'<a class="t" href="'+esc(e.url)+'" target="_blank" rel="noopener">'+esc(e.title)+' ↗</a>':'<span class="t">'+esc(e.title)+'</span>';
+    return '<li'+(i>=FEED_SHOW?' hidden data-extra':'')+'><span class="ic" title="'+L[e.type]+'"><svg viewBox="0 0 24 24" aria-hidden="true">'+P[e.type]+'</svg></span>'+
+      '<span>'+t+'<span class="m">'+R[e.type]+' · '+esc(e.where)+'</span></span><span class="dt">'+esc(e.date||'')+'</span></li>';
+  }).join('');
+  if(MEDIA.length>FEED_SHOW){
+    var open=false;
+    function label(){btn.textContent=open?'Show fewer ↑':'Show all '+MEDIA.length+' ↓';btn.setAttribute('aria-expanded',open)}
+    btn.hidden=false;label();
+    btn.addEventListener('click',function(){open=!open;list.querySelectorAll('[data-extra]').forEach(function(li){li.hidden=!open});label();
+      if(!open)document.getElementById('media').scrollIntoView({block:'start'});});
+  }
+})();
+
+
+(function(){
+  document.querySelectorAll('[data-email]').forEach(function(el){ el.textContent = SITE.email; });
+  document.querySelectorAll('[data-email-link]').forEach(function(el){ el.href = 'mailto:' + SITE.email; });
+
+  if(location.hash==='#story'){document.getElementById('how').scrollIntoView({block:'start'});}
+
+})();
+</script>
+</body>
+</html>
