@@ -1,0 +1,11 @@
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+
+# Keep the Pages test and deployment URLs out of search results.
+# Host-specific rules do not apply to bankruptcyattorney.ai or www.
+https://bankruptcyattorney-ai.pages.dev/*
+  X-Robots-Tag: noindex
+
+https://:version.bankruptcyattorney-ai.pages.dev/*
+  X-Robots-Tag: noindex
