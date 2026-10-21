@@ -106,8 +106,9 @@ section h2{font-size:clamp(26px,3.6vw,32px);font-weight:600;color:var(--text);le
 .feed a.t{text-decoration:none}
 .feed a.t:hover{text-decoration:underline}
 .feed .m{display:block;font-family:var(--sans);font-size:15px;color:var(--muted);margin-top:4px;line-height:1.45}
-.feed a.v{display:inline-block;margin-top:6px;font-size:15px;font-weight:500;color:var(--accent);text-decoration:none}
+.feed a.v{display:inline-flex;align-items:center;gap:6px;margin-top:6px;font-size:15px;font-weight:500;color:var(--accent);text-decoration:none}
 .feed a.v:hover{text-decoration:underline}
+.feed a.v svg{width:16px;height:16px;flex:none;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
 .feed .dt{font-family:var(--sans);font-size:15px;font-weight:500;color:var(--soft);white-space:nowrap;padding-top:1px;font-variant-numeric:tabular-nums}
 .feed-more{margin-top:14px;font-family:var(--sans);font-size:15px;font-weight:500;background:transparent;border:1px solid var(--line);color:var(--text);padding:8px 14px;border-radius:999px;cursor:pointer}
 .feed-more:hover{border-color:var(--muted)}
@@ -325,7 +326,7 @@ var FEED_SHOW = 6;
   list.innerHTML=MEDIA.map(function(e,i){
     var t=e.url?'<a class="t" href="'+esc(e.url)+'" target="_blank" rel="noopener">'+esc(e.title)+' ↗</a>':'<span class="t">'+esc(e.title)+'</span>';
     return '<li'+(i>=FEED_SHOW?' hidden data-extra':'')+'><span class="ic" title="'+L[e.type]+'"><svg viewBox="0 0 24 24" aria-hidden="true">'+P[e.type]+'</svg></span>'+
-      '<span>'+t+'<span class="m">'+R[e.type]+' · '+esc(e.where)+'</span>'+(e.video?'<a class="v" href="'+esc(e.video)+'" target="_blank" rel="noopener">Watch the demo ↗</a>':'')+'</span><span class="dt">'+esc(e.date||'')+'</span></li>';
+      '<span>'+t+'<span class="m">'+R[e.type]+' · '+esc(e.where)+'</span>'+(e.video?'<a class="v" href="'+esc(e.video)+'" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m10 8 6 4-6 4V8Z"/></svg>Watch the demo ↗</a>':'')+'</span><span class="dt">'+esc(e.date||'')+'</span></li>';
   }).join('');
   if(MEDIA.length>FEED_SHOW){
     var open=false;
